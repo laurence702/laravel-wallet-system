@@ -1,0 +1,24 @@
+{
+	"name": "modules/transaction",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Modules\\Transaction\\": "src/",
+			"Modules\\Transaction\\Tests\\": "tests/",
+			"Modules\\Transaction\\Database\\Factories\\": "database/factories/",
+			"Modules\\Transaction\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Modules\\Transaction\\Providers\\TransactionServiceProvider"
+			]
+		}
+	}
+}
